@@ -1,15 +1,34 @@
 public class Countries {
-    String name;
-    double square;
-    int population;
-    boolean exitToSea;
+   private String name;
+   private double square;
+   private int population;
+   private boolean exitToSea;
 
-    public void add (String name, double square, int population, boolean exitToSea) {
+    public Countries (String name) {
         this.name = name;
-        this.square = square;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public void setPopulation(int population) {
         this.population = population;
+    }
+    public void setSquare(double square) {
+        this.square = square;
+    }
+    public void setExitToSea(boolean exitToSea) {
         this.exitToSea = exitToSea;
     }
-
-
+    public String getCountriesName() {
+        return name;
+    }
+    public int getPopulation() {
+        return population;
+    }
+    public double getSquare() {
+        return square;
+    }
+    public boolean isExitToSea() {
+        return exitToSea;
+    }
 }
