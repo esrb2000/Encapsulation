@@ -6,16 +6,22 @@ public class ChildBankAccount {
         this.balance = 0.0;
     }
 
-    public ChildBankAccount (double maxBalance) {
+    public ChildBankAccount(double maxBalance) {
         this.maxBalance = maxBalance;
     }
+
     public boolean depositMoney(double value) {
-       while (balance < maxBalance) {
-           balance = balance + value;
+        double chekBalance = balance + value;
+        if (chekBalance < maxBalance) {
+            balance = balance + value;
+            return true;
+        } else {
+            balance = balance;
+            return false;
         }
-        return true;
     }
     public double getBalance() {
         return balance;
     }
 }
+
