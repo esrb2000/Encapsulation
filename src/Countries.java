@@ -28,7 +28,7 @@ public class Countries {
     public double getSquare() {
         return square;
     }
-    public boolean isExitToSea() {
+    public boolean getIsExitToSea() {
         return exitToSea;
     }
 }
